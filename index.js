@@ -102,7 +102,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content.toLocaleLowerCase() === '!inspiration') {
+    if (message.content.toLocaleLowerCase() === '!inspire') {
         var rando = Math.floor(Math.random() * (inspire.length));
         message.channel.send(inspire[rando]);
     }
